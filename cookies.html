@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Cookie Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container ">
+      <a href="index.html" class="navbar-brand text-primary">eCookies </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="cookies.html" class="nav-link 
+          nav-link-hover-primary">Cookies</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-5">
+
+    <div class="card-columns">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="img/sugar-cookie.jpeg" alt="" id="sugar-cookie">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Sugar Cookie</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, animi.</p>
+          <button id="eat-sugar" class="btn btn-primary">Eat Cookie</button>
+        </div>
+      </div>
+
+      <div class="card pb-3">
+        <img class="card-img-top img-fluid" src="img/lemon-cookie.jpg" alt="" id="lemon-cookie">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Lemon Cookie</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, autem?</p>
+          <button id="eat-lemon" class="btn btn-primary">Eat Cookie</button>
+        </div>
+      </div>
+      <div class="card pb-3">
+        <img class="card-img-top img-fluid" src="img/chocolate-cookie.jpeg" alt="" id="choclate-cookie">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Chocolate Cookie</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, in?</p>
+          <button id="eat-chocolate" class="btn btn-primary">Eat Cookie</button>
+        </div>
+      </div>
+
+    </div>
+    <ul class="list-group mb-5 mt-5">
+      <li class="list-group-item d-flex justify-content-between align-items-center">Number of sugar cookies eaten
+        <button id=clearSugar class="btn btn-sm btn-primary">Clear</button>
+        <span class="badge badge-primary" id="sugar-count"></span>
+
+      </li>
+
+      <li class="list-group-item d-flex justify-content-between align-items-center">Number of lemon cookies eaten
+        <button id=clearLemon class="btn btn-sm btn-primary">Clear</button>
+        <span class="badge badge-primary" id="lemon-count"></span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">Number of chocolate cookies eaten
+        <button id=clearChocolate class="btn btn-sm btn-primary">Clear</button>
+        <span class="badge badge-primary" id="chocolate-count"></span>
+      </li>
+    </ul>
+  </div>
+
+
+
+  </div>
+
+  <div style="margin-top:800px;"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/cookies.js"></script>
+  <script src="js/cookie.js"></script>
+</body>
+
+</html>
