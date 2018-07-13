@@ -17,7 +17,7 @@ $("#eat-lemon").click(function() {
   updateLemonCount();
 });
 
-var cCount = parseInt(Cookies.get("chocolateCount"));
+var cCount = 0;
 $("#eat-chocolate").click(function() {
   cCount += 1;
   Cookies.set("chocolateCount", cCount);
@@ -52,14 +52,17 @@ updateChocolateCount();
 $("#clearSugar").click(function() {
   Cookies.set("sugarCount", 0);
   updateSugarCount();
+  sCount = 0;
 });
 
 $("#clearLemon").click(function() {
   Cookies.set("lemonCount", 0);
   updateLemonCount();
+  lCount = 0;
 });
 
 $("#clearChocolate").click(function() {
   Cookies.set("chocolateCount", 0);
   updateChocolateCount();
+  cCount = 0;
 });
